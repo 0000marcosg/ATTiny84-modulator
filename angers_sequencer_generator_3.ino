@@ -19,6 +19,10 @@ void setup() {
   pinMode(8, OUTPUT);
   pinMode(10, INPUT_PULLUP);
 
+  
+  //https://andreasrohner.at/posts/Electronics/How-to-set-the-PWM-frequency-for-the-Attiny84/
+  
+  
   TCCR0B = TCCR0B & B11111000 | B00000001;
   /*
      WGM10, WGM12: Fast PWM, 8-bit TOP=255
